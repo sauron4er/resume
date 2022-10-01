@@ -4,7 +4,48 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  gap: 2em;
+:root {
+  --main-color: #11223d;
+  --second-color: #3a76aa;
 }
+
+body, main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  /*background-color: var(--main-color);*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+main > div {
+  border: 1px solid var(--second-color);
+  padding: 1em
+}
+
+main {
+
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.job {
+  font-weight: 300;
+}
+
+.projects_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
