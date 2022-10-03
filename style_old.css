@@ -70,69 +70,18 @@ nav a + a {
 /*}*/
 
 section {
+    /*padding: 4em 1em 1em;*/
     padding: 1em;
     min-height: 100vh;
 }
 
 #info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@keyframes container-slide-in {
-  0% {
-    transform: translateX(-200% + 2em);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes container-slide-out {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200%);
-  }
-}
-
-@keyframes content-slide-in {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.info-content{
-    position: relative;
-    display: flex;
     gap: 3em;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-
-    will-change: animation;
-    animation: 1s ease-out 0s content-slide-in;
-    isolation: isolate;
-}
-
-.info-content::after {
-    content: '';
-    position: absolute;
-    background-color: gold;
-    top: -1em;
-    left: -1em;
-    width: calc(100% + 2em);
-    height: calc(100% + 2em);
-    will-change: animation;
-    /*animation: 1s ease-out 0s container-slide-in;*/
-    animation: 1s ease-out 0s container-slide-in, 1s ease-in 1s container-slide-out;
-    z-index: -1;
 }
 
 .hero {
@@ -171,33 +120,22 @@ h4 {
     margin: 0;
 }
 
+#projects {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*align-content: flex-start;*/
+    /*position: relative;*/
+
+}
+
 #projects > h2 {
     margin-top: 15vw;
 }
 
-/*.project {*/
-/*    position: relative;*/
-/*    isolation: isolate;*/
-/*}*/
-
-/*.project.project-1::after {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    background-color: steelblue;*/
-/*    top: -.5em;*/
-/*    left: -100em;*/
-/*    width: calc(100% + 1em);*/
-/*    height: calc(100% + 1em);*/
-/*    transition: left ease-out .5s;*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.project.project-1:hover::after {*/
-/*    left: -.5em;*/
-/*    transition: left ease-in .5s;*/
-/*}*/
-
 .projects-list {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -256,17 +194,6 @@ h4 {
 #contacts div {
     flex-basis: 300px;
     text-align: center;
-}
-
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact .bx {
-    margin-right: .2em;
-    font-size: 1.5em;
 }
 
 .btn-more {

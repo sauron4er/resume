@@ -9,46 +9,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap"
           rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <nav>
-    <a href="#">Про мене</a> |
-    <a href="#">Мої проекти</a> |
-    <a href="#">Контакти</a>
+    <a href="#info">Про мене</a>
+    <a href="#projects">Мої проекти</a>
+    <a href="#contacts">Контакти</a>
 </nav>
+<!--    <div class="arrow arrow-up"></div>-->
+<!--    <div class="arrow arrow-down"></div>-->
+
 <main>
-    <div class="hero">
-        <img src="web-page.jpg" alt="my photo">
-        <h1 class="name">Храмцов Станіслав Артурович</h1>
-        <div class="job">Верстальник HTML/CSS</div>
-    </div>
-    <div class="about">
-        <h2>Про мене</h2>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus eos et, ex fugiat illum impedit
-            laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit repudiandae saepe
-            sed, soluta?
+    <!--        <i class='bx bx-chevron-up'></i>-->
+    <!--        <i class='bx bx-chevron-down'></i>-->
+
+    <section id="info">
+
+        <div class="info-content">
+            <div class="hero">
+                <img src="photo_250px.jpg" alt="Khramtsov">
+                <h1 class="name">Храмцов Станіслав Артурович</h1>
+                <div class="job">HTML/CSS/React/Django</div>
+            </div>
+            <div class="about">
+                <h1>Про мене</h1>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus eos et, ex fugiat illum
+                    impedit
+                    laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit
+                    repudiandae
+                    saepe
+                    sed, soluta?
+                </div>
+                <button class="btn-more">More...</button>
+            </div>
         </div>
-    </div>
-    <div class="projects">
-        <h2>Мої проекти</h2>
-        <div class="projects_list">
-            <section class="project">
-                <h3>EDMS</h3>
-            </section>
-            <section class="project">
-                <h3>Scheduler</h3>
-            </section>
-            <section class="project">
-                <h3>StandUp</h3>
-            </section>
+
+    </section>
+
+    <section id="projects">
+        <h2>Проекти</h2>
+        <div class="projects-list">
+            <div class="project project-1">
+                <img src="web-page.jpg" alt="EDMS Project">
+                <div class="description"><h4>EDMS</h4>
+                    <div>One-line explain</div>
+                    <button class="btn-more">More...</button>
+                </div>
+            </div>
+            <div class="project project-2">
+                <img src="web-page.jpg" alt="Scheduler">
+                <div class="description"><h4>Scheduler</h4>
+                    <div>One-line explain</div>
+                    <button class="btn-more">More...</button>
+                </div>
+            </div>
+            <div class="project project-3">
+                <img src="web-page.jpg" alt="StandUp">
+                <div class="description"><h4>StandUp</h4>
+                    <div>One-line explain</div>
+                    <button class="btn-more">More...</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="contacts">
+    </section>
+    <section id="contacts">
         <h2>Контакти</h2>
-        <div>+380955532977</div>
-        <div>sauron4er@gmail.com</div>
-        <div>LinkedIn</div>
-    </div>
+        <div class="contact"><i class='bx bx-phone'></i> +380955532977</div>
+        <div class="contact"><i class='bx bxl-telegram'></i> Stanislav Khramtsov</div>
+        <div class="contact"><i class='bx bx-mail-send'></i> sauron4er@gmail.com</div>
+        <div class="contact"><i class='bx bxl-linkedin'></i> LinkedIn</div>
+    </section>
 </main>
 </body>
 </html>
