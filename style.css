@@ -82,13 +82,17 @@ body {
 
 nav {
     position: fixed;
-    background-color: whitesmoke;
+    background-color: var(--second-color);
     width: 100%;
-    height: 4em;
+    height: 7vh;
     top: 0;
     line-height: 4em;
     text-align: center;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw
 }
 
 nav a {
@@ -98,10 +102,6 @@ nav a {
 
 nav a:hover {
 
-}
-
-nav a + a {
-    margin-left: 1em;
 }
 
 /*.arrow {*/
@@ -135,11 +135,11 @@ section {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 4em;
+    /*margin-top: 4em;*/
 }
 
 .hero {
-    width: min(500px, 90%);
+    width: min(min(500px, 90%), 70vh);
     border-radius: 1em;
     box-shadow: grey 2px 2px 4px;
 }
@@ -170,8 +170,14 @@ h4 {
     margin: 0;
 }
 
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #projects > h2 {
-    margin-top: 15vw;
+    /*margin-top: 15vw;*/
 }
 
 /*.project {*/
@@ -276,12 +282,6 @@ h4 {
     border-radius: 5px;
     font-size: 1.2em;
     font-weight: 100;
-}
-
-@media screen and (min-width: 700px) {
-    nav a + a {
-        margin-left: 10em;
-    }
 }
 
 @media screen and (min-width: 900px) {
