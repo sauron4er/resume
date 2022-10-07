@@ -92,12 +92,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5vw
+    gap: 5vw;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 nav a:hover {
@@ -145,10 +145,16 @@ section {
 }
 
 .about {
-    max-width: min(300px, 80%);
+    max-width: min(500px, 80%);
     flex-basis: 50%;
     flex-grow: 1;
     color: black;
+    transition: max-width 1s ease;
+}
+
+.about:has(details[open]) {
+    max-width: min(500px, 80%);
+    transition: max-width 1s ease;
 }
 
 h1 {
@@ -172,35 +178,10 @@ h4 {
 
 #projects {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 12vw;
 }
-
-#projects > h2 {
-    /*margin-top: 15vw;*/
-}
-
-/*.project {*/
-/*    position: relative;*/
-/*    isolation: isolate;*/
-/*}*/
-
-/*.project.project-1::after {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    background-color: steelblue;*/
-/*    top: -.5em;*/
-/*    left: -100em;*/
-/*    width: calc(100% + 1em);*/
-/*    height: calc(100% + 1em);*/
-/*    transition: left ease-out .5s;*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.project.project-1:hover::after {*/
-/*    left: -.5em;*/
-/*    transition: left ease-in .5s;*/
-/*}*/
 
 .projects-list {
     display: flex;
@@ -215,6 +196,7 @@ h4 {
     text-align: center;
     flex-basis: 30vw;
     min-width: min(400px, 90vw);
+    cursor: pointer;
 }
 
 .project > img {
