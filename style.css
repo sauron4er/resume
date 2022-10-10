@@ -176,6 +176,11 @@ h4 {
     margin: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 #projects {
     display: flex;
     align-items: flex-start;
@@ -193,6 +198,7 @@ h4 {
 }
 
 .project {
+    position: relative;
     text-align: center;
     flex-basis: 30vw;
     min-width: min(400px, 90vw);
@@ -202,7 +208,7 @@ h4 {
 .project > img {
     width: 80%;
     transition: width .5s ease;
-    border-radius: 2%;
+    border-radius: 2% 2% 0 0;
 }
 
 .project:hover > img {
@@ -223,8 +229,24 @@ h4 {
     transition: padding-left .5s ease, font-size .5s ease;
 }
 
-.project_name {
+.project > .more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    background-color: var(--second-color);
+    width: 0;
+    height: 45px;
+}
 
+.project:hover > .more {
+    width: 45px;
+    transition: width .5s .5s ease;
+}
+
+.more > .bx-plus {
+    color: white;
+    margin: auto;
 }
 
 #contacts {
