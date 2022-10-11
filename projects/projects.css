@@ -1,0 +1,14 @@
+.project_nav {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 3em;
+}
+
+.project_nav .bx-chevron-left {
+    font-size: 2em;
+}
+
+main {
+    margin: 5em 5vw;
+}
