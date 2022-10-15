@@ -53,10 +53,16 @@
 /*    border-top: 15px solid gray;*/
 /*}*/
 
+body {
+    background-color: #F5F5F5;
+}
+
 section {
     padding: 1em;
     min-height: 100vh;
 }
+
+/* About */
 
 #info {
     display: flex;
@@ -111,11 +117,13 @@ a {
     text-decoration: none;
 }
 
+/* Projects */
+
 #projects {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 12vw;
+    padding-top: 15vw;
 }
 
 .projects-list {
@@ -133,12 +141,24 @@ a {
     flex-basis: 30vw;
     min-width: min(400px, 90vw);
     cursor: pointer;
+    margin-top: 1em;
+    isolation: isolate;
+}
+
+.test::after {
+    content: 'чочоч';
+    width: 100%;
+    position: relative;
+    border-top: 1px solid var(--main-color);
+    background-color: greenyellow;
+    z-index: 5;
+    top: 50%
 }
 
 .project > img {
     width: 80%;
     transition: width .5s ease;
-    border-radius: 2% 2% 0 0;
+    /*border: 1px solid var(--main-color);*/
 }
 
 .project:hover > img {
@@ -157,6 +177,10 @@ a {
     padding-left: 0;
     font-size: 1.2em;
     transition: padding-left .5s ease, font-size .5s ease;
+}
+
+.project-title {
+    margin: .5em 0;
 }
 
 .project > .more {
@@ -178,6 +202,8 @@ a {
     color: white;
     margin: auto;
 }
+
+/* Contacts*/
 
 #contacts {
     display: flex;
