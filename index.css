@@ -53,9 +53,14 @@
 /*    border-top: 15px solid gray;*/
 /*}*/
 
+main {
+    scroll-snap-type: x mandatory;
+}
+
 section {
     padding: 1em;
     min-height: 100vh;
+    scroll-snap-align: center;
 }
 
 #info {
