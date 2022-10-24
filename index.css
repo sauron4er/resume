@@ -57,9 +57,14 @@ body {
     background-color: #F5F5F5;
 }
 
+main {
+    scroll-snap-type: x mandatory;
+}
+
 section {
     padding: 1em;
     min-height: 100vh;
+    scroll-snap-align: center;
 }
 
 /* About */
