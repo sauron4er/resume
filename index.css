@@ -34,24 +34,24 @@
     }
 }
 
-/*.arrow {*/
-/*    position: fixed;*/
-/*    left: 10px;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-left: 15px solid transparent;*/
-/*    border-right: 15px solid transparent;*/
-/*}*/
+.arrow {
+    position: fixed;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
 
-/*.arrow.arrow-up {*/
-/*    bottom: 35px;*/
-/*    border-bottom: 15px solid gray;*/
-/*}*/
+.arrow.arrow-up {
+    top: calc(50% - 20px);
+    border-bottom: 15px solid var(--main-color);
+}
 
-/*.arrow.arrow-down {*/
-/*    bottom: 10px;*/
-/*    border-top: 15px solid gray;*/
-/*}*/
+.arrow.arrow-down {
+    top: calc(50% + 10px);
+    border-top: 15px solid var(--main-color);
+}
 
 body {
     background-color: #F5F5F5;
@@ -71,7 +71,6 @@ section {
     justify-content: center;
     align-items: center;
     align-content: center;
-    /*margin-top: 4em;*/
 }
 
 .hero {
@@ -132,7 +131,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     align-content: center;
-    gap: 1em
+    gap: 1em;
 }
 
 .project {
@@ -142,17 +141,10 @@ a {
     min-width: min(400px, 90vw);
     cursor: pointer;
     margin-top: 1em;
+    padding-bottom: 1em;
     isolation: isolate;
-}
-
-.test::after {
-    content: 'чочоч';
-    width: 100%;
-    position: relative;
-    border-top: 1px solid var(--main-color);
-    background-color: greenyellow;
-    z-index: 5;
-    top: 50%
+    background-color: #F5F5F5;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .project > img {
@@ -175,8 +167,13 @@ a {
 
 .project:hover > .description {
     padding-left: 0;
-    font-size: 1.2em;
+    font-size: 1.13em;
     transition: padding-left .5s ease, font-size .5s ease;
+}
+
+.description .italic {
+    font-style: italic;
+    margin-bottom: .5em;
 }
 
 .project-title {
@@ -185,7 +182,7 @@ a {
 
 .project > .more {
     position: absolute;
-    bottom: 0;
+    top: 50%;
     right: 0;
     display: flex;
     background-color: var(--main-color);
@@ -199,8 +196,13 @@ a {
 }
 
 .more > .bx-plus {
-    color: white;
+    color: transparent;
     margin: auto;
+}
+
+.project:hover > .more > .bx-plus {
+    color: white;
+    transition: color 1s .5s ease;
 }
 
 /* Contacts*/
@@ -234,7 +236,8 @@ a {
     font-size: 1.5em;
 }
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 848px) {
     .hero {
         will-change: animation;
         animation: .75s ease-out 0s content-slide-in, 1s ease-out hero-opacity;
@@ -242,5 +245,16 @@ a {
 
     .about {
         animation: 2.25s ease-out about-transparent-to-black;
+    }
+
+    .project {
+        border: none;
+    }
+}
+
+
+@media screen and (min-width: 370px) and (max-width: 1063px) {
+    .hero {
+        margin-top: 4em;
     }
 }
