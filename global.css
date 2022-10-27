@@ -23,9 +23,6 @@ body {
     0% {
         transform: translateX(100%);
     }
-    50% {
-        transform: translateX(100%);
-    }
     100% {
         transform: translateX(0);
     }
@@ -77,10 +74,10 @@ nav a:hover {
     }
 
     nav .projects {
-        animation: 3s ease nav-item-opacity;
+        animation: 3.5s ease nav-item-opacity;
     }
 
     nav .contacts {
-        animation: 3s ease nav-item-opacity;
+        animation: 4s ease nav-item-opacity;
     }
 }
