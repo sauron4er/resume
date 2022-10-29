@@ -53,10 +53,6 @@
     border-top: 15px solid var(--main-color);
 }
 
-body {
-    background-color: #F5F5F5;
-}
-
 main {
     scroll-snap-type: x mandatory;
 }
@@ -95,30 +91,6 @@ section {
 .about:has(details[open]) {
     max-width: min(500px, 80%);
     transition: max-width 1s ease;
-}
-
-h1 {
-    font-size: min(3em, 13vw);
-}
-
-h1, h2, h3 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-    margin: .5em 0;
-}
-
-h2 {
-    text-align: center;
-}
-
-h4 {
-    font-family: 'Roboto Slab', serif;
-    margin: 0;
-}
-
-a {
-    color: black;
-    text-decoration: none;
 }
 
 /* Projects */

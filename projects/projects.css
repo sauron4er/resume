@@ -28,6 +28,10 @@ main {
     margin: 8vh 5vw;
 }
 
+.project-name {
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
