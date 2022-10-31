@@ -14,7 +14,8 @@
 </head>
 <body>
 <nav>
-    <a class="info" href="#info">Про мене</a>
+    <a class="info" href="#info">Головна</a>
+    <a class="experience" href="#experience">Про мене</a>
     <a class="projects" href="#projects">Мої проекти</a>
     <a class="contacts" href="#contacts">Контакти</a>
 </nav>
@@ -22,30 +23,55 @@
 <!--    <div class="arrow arrow-down"></div>-->
 
 <main>
-<!--            <i class='bx bx-chevron-up'></i>-->
-<!--            <i class='bx bx-chevron-down'></i>-->
+    <!--            <i class='bx bx-chevron-up'></i>-->
+    <!--            <i class='bx bx-chevron-down'></i>-->
 
     <section id="info">
         <img class="hero" src="static/images/photo_500px.jpg" alt="Khramtsov">
         <div class="about">
-            <h1 class="name">Станіслав Храмцов</h1>
-            <h3 class="job">HTML/CSS/React/Django</h3>
-            <details>
-                <summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus eos et, ex fugiat illum
-                    impedit laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit
-                    repudiandae saepe sed, soluta?
-                </summary>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus eos et, ex fugiat illum
-                impedit laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit
-                repudiandae saepe sed, soluta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus
-                eos et, ex fugiat illum
-                impedit laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit
-                repudiandae saepe sed, soluta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus
-                eos et, ex fugiat illum
-                impedit laboriosam laudantium, maiores odio optio porro possimus provident ratione reprehenderit
-                repudiandae saepe sed, soluta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloribus
-                eos et, ex fugiat illum
-            </details>
+            <h1 class="about--name">Станіслав Храмцов</h1>
+            <h3 class="about--job">HTML/CSS/React/Django</h3>
+            <div class="about--text">
+                <p>Привіт!</p>
+                <p>Я з Закарпаття, живу близько 25 км від Ужгороду. Останні 3 роки займаюся Fullstack розробкою на
+                    Django + React. Хоча, якщо сказати чесно, більше до душі фронтенд – дуже вже приємно бачити, як моя
+                    робота "в прямому ефірі" змінює вигляд сторінки.
+                </p>
+                <p>Мій стек перерахований вгорі, але я завжди відкритий до вивчення чогось нового (наприклад, уже деякий
+                    час дивлюсь в сторону Svelte та Next.js).
+                </p>
+                <p>Більш детально про мій життєвий досвід читайте <a class="about--text--anchor" href="#experience">нижче</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience--text">
+            <h2>Про мене</h2>
+            <p>В справжніх ІТ компаніях я, на жаль, ніколи не працював. З 2015-го працював на підприємство-завод, де
+                останні 3 роки займався розробкою декількох проектів. Але давайте спочатку.</p>
+            <p>Вчився в університеті я на банкіра, і це була помилка – жодного дня не пропрацював на цьому напрямі,
+                бо зрозумів, що не хочу рахувати цифри і перекладати папірці. Замість цього трохи попрацював
+                адміністратором онлайн-клубу, а потім влаштувався на роботу у місцеву газету верстальником. І прямо
+                під час роботи почав вивчати спочатку Adobe PageMaker (жах!), а невдовзі (коли роботодавець купив
+                нормальний комп) - Adobe Indesign та Photoshop (супер!). Ще через якийсь час настільки опанував
+                InDesign, що пішов у фріланс і почав заробляти вечорами додаткові гроші.
+            </p>
+            <p>Потім перейшов на роботу на місцевий завод системним адміністратором, де декілька років тому
+                зацікавився завданням розробити систему електронного документообігу і для цього опанував
+                HTML+CSS+Django+React. Займався паралельно і фрілансом в InDesign. На той час я переорієнтувався на
+                верстку перекладних інструкцій для декількох великих бюро перекладів (тут я натякаю, що маю великий
+                досвід верстки по чужому дизайну). Але 90% замовлень надходили від замовників з росії, з якими 24
+                лютого 2022 року я порвав стосунки.
+            </p>
+            <p>Мені 36 років, але не лякайтеся, я ще не настільки старий, щоб розлюбити вчитися. Цього року,
+                наприклад, я дуже зацікавився ванільним CSS, його анімаціями, роботою з адаптивністю. Коли зрозумів,
+                що досяг "скляної стелі" в розвитку на заводі, почав цікавитися ІТ фірмами і звернув увагу на agile,
+                принципи та методології якого зараз вивчаю.
+            </p>
+            <p class="experience--text--italic">Шукаю роботу Junior Frontend/Fullstack Developer. Якщо
+                отримаю на новій роботі ще й ментора, буде взагалі супер!</p>
         </div>
     </section>
 
@@ -58,8 +84,12 @@
                     <div class="description">
                         <h4 class="project-title">CMS для підприємства</h4>
                         <div class="italic">Стек: Django, React, Bootstrap 4, Webpack</div>
-                        <div class="project-explanation">Перший мій проект, над яким я працював паралельно вивчаючи технології.</div>
-                        <div>Система внутрішнього електронного документообігу, яка з часом виросла у майже повноцінну CMS з базами контрагентів, угод, наказів</div>
+                        <div class="project-explanation">Перший мій проект, над яким я працював паралельно вивчаючи
+                            технології.
+                        </div>
+                        <div>Система внутрішнього електронного документообігу, яка з часом виросла у майже повноцінну
+                            CMS з базами контрагентів, угод, наказів
+                        </div>
                     </div>
                     <div class="more">
                         <i class='bx bx-plus'></i>
@@ -70,8 +100,8 @@
                     <div class="description">
                         <h4 class="project-title">Календар для стоматологічного кабінету</h4>
                         <div class="italic">Стек: Django, React, Bootstrap 4, Webpack</div>
-                        <div>На сайті ведеться база клієнтів, лікарів та календар прийомів. </div>
-                        <div>Можна змінювати теми. </div>
+                        <div>На сайті ведеться база клієнтів, лікарів та календар прийомів.</div>
+                        <div>Можна змінювати теми.</div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
                 </a>
@@ -80,8 +110,12 @@
                     <div class="description">
                         <h4 class="project-title">StandUp tracker</h4>
                         <div class="italic">Стек: Django, React, CSS, Webpack</div>
-                        <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх спешлам.</div>
-                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на тематичних форумах. </div>
+                        <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх
+                            спешлам.
+                        </div>
+                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на
+                            тематичних форумах.
+                        </div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
                 </a>
@@ -90,8 +124,12 @@
                     <div class="description">
                         <h4 class="project-title">Сайт для попереднього роботодавця</h4>
                         <div class="italic">Стек: HTML, CSS, Bootstrap 4, Pug, Gulp</div>
-                        <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх спешлам.</div>
-                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на тематичних форумах. </div>
+                        <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх
+                            спешлам.
+                        </div>
+                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на
+                            тематичних форумах.
+                        </div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
                 </a>

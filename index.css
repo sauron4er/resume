@@ -88,9 +88,29 @@ section {
     transition: max-width 1s ease;
 }
 
-.about:has(details[open]) {
-    max-width: min(500px, 80%);
-    transition: max-width 1s ease;
+.about--text {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.about--text--anchor {
+    text-decoration: underline;
+}
+
+/* Experience */
+#experience {
+    display: flex;
+    line-height: 1.3em;
+}
+
+.experience--text {
+    margin: auto;
+    max-width: min(800px, 80%);
+    text-align: justify;
+}
+
+.experience--text--italic {
+    font-style: italic;
 }
 
 /* Projects */
@@ -194,6 +214,24 @@ section {
     font-size: 1.5em;
 }
 
+@media screen and (min-width: 900px) {
+    nav .info {
+        animation: 3s ease nav-item-opacity;
+    }
+
+    nav .experience {
+        animation: 3.5s ease nav-item-opacity;
+    }
+
+    nav .projects {
+        animation: 4s ease nav-item-opacity;
+    }
+
+    nav .contacts {
+        animation: 4.5s ease nav-item-opacity;
+    }
+}
+
 
 @media screen and (min-width: 848px) {
     .hero {
@@ -201,7 +239,7 @@ section {
         animation: .75s ease-out 0s content-slide-in, 1s ease-out hero-opacity;
     }
 
-    .about {
+    .about, .about--text--anchor {
         animation: 2.25s ease-out about-transparent-to-black;
     }
 

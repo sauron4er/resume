@@ -93,16 +93,4 @@ nav a:hover {
     nav {
         animation: 2s ease nav-slide-in;
     }
-
-    nav .info {
-        animation: 3s ease nav-item-opacity;
-    }
-
-    nav .projects {
-        animation: 3.5s ease nav-item-opacity;
-    }
-
-    nav .contacts {
-        animation: 4s ease nav-item-opacity;
-    }
 }
