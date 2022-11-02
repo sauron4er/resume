@@ -28,10 +28,27 @@ main {
     margin: 8vh 5vw;
 }
 
+.project-content {
+    display: block;
+}
+
+
+.project-content div {
+    background-color: palegoldenrod;
+}
+
 .project-name {
     text-align: center;
 }
 
 img {
     width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .project-content {
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+        gap: 1em;
+    }
 }
