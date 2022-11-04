@@ -30,7 +30,29 @@
         <img class="hero" src="static/images/photo_500px.jpg" alt="Khramtsov">
         <div class="about">
             <h1 class="about--name">Станіслав Храмцов</h1>
-            <h3 class="about--job">HTML · CSS · JS · React · Django</h3>
+            <!--            <h3 class="about&#45;&#45;stack">HTML · CSS · JS · React · Django</h3>-->
+            <div class="about--stack">
+                <div class="stack--item">
+                    <i class='bx bxl-html5'></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="stack--item">
+                    <i class='bx bxl-css3'></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="stack--item">
+                    <i class='bx bxl-javascript'></i>
+                    <h4>JS</h4>
+                </div>
+                <div class="stack--item">
+                    <i class='bx bxl-react'></i>
+                    <h4>React</h4>
+                </div>
+                <div class="stack--item">
+                    <i class='bx bxl-django'></i>
+                    <h4>Django</h4>
+                </div>
+            </div>
             <div class="about--text">
                 <p>Привіт!</p>
                 <p>Я з Закарпаття, живу близько 25 км від Ужгороду. Останні 3 роки займаюся Fullstack розробкою на
@@ -41,6 +63,8 @@
                 </p>
                 <p>Більш детально про мій досвід читайте <a class="about--text--anchor" href="#experience">нижче</a>.
                 </p>
+                <p><a class="about--text--anchor" href="#">Переглянути резюме</a>.
+                </p>
             </div>
         </div>
     </section>
@@ -50,22 +74,22 @@
             <h2>Про мене</h2>
             <p>В справжніх ІТ компаніях я, на жаль, ніколи не працював. З 2015-го працював на підприємство-завод, де
                 останні 3 роки займався розробкою декількох проектів. Але давайте спочатку.</p>
-            <p>Вчився в університеті я на банкіра, і це була помилка – жодного дня не пропрацював на цьому напрямі,
-                бо зрозумів, що не хочу рахувати цифри і перекладати папірці. Замість цього трохи попрацював
-                адміністратором онлайн-клубу, а потім влаштувався на роботу у місцеву газету верстальником. І прямо
+            <p>Вчився в університеті я на банкіра, і це була помилка – досить швидко зрозумів, що це не моє. По
+                закінченні навчання працював трохи
+                адміністратором онлайн-клубу, потім влаштувався на роботу у місцеву газету верстальником. І прямо
                 під час роботи почав вивчати спочатку Adobe PageMaker (жах!), а невдовзі (коли роботодавець купив
                 нормальний комп'ютер) - Adobe InDesign та Photoshop (супер!). Ще через якийсь час настільки опанував
-                InDesign, що пішов у фріланс і почав заробляти вечорами додаткові гроші.
+                InDesign, що вечорами почав займатися фрілансом.
             </p>
-            <p>Потім перейшов на роботу на місцевий завод системним адміністратором, де декілька років тому
-                зацікавився завданням розробити систему електронного документообігу і для цього опанував
-                HTML+CSS+Django+React. Займався паралельно і фрілансом в InDesign. На той час я переорієнтувався на
+            <p>Потім перейшов на місцевий завод системним адміністратором, де декілька років тому
+                почав розробляти систему електронного документообігу. Займався паралельно і фрілансом в InDesign.
+                На той час я переорієнтувався на
                 верстку перекладних інструкцій для декількох великих бюро перекладів (тут я натякаю, що маю великий
                 досвід верстки по чужому дизайну). Але 90% замовлень надходили від замовників з росії, з якими 24
                 лютого 2022 року я порвав стосунки.
             </p>
-            <p>Мені 36 років, але не лякайтеся, я ще не настільки старий, щоб розлюбити вчитися. Цього року,
-                наприклад, я дуже зацікавився ванільним CSS, його анімаціями, роботою з адаптивністю. Коли зрозумів,
+            <p>Мені 36 років, але не лякайтеся, я ще не настільки старий, щоб розлюбити вчитися. Цього року дуже
+                зацікавився ванільним CSS, його анімаціями, роботою з адаптивністю. Коли зрозумів,
                 що досяг стелі в розвитку на заводі, почав цікавитися роботою в ІТ і звернув увагу на agile,
                 принципи та методології якого зараз вивчаю.
             </p>
@@ -82,10 +106,7 @@
                     <img src="static/images/edms/front.png" alt="EDMS Project" loading="lazy">
                     <div class="description">
                         <h4 class="project-title">CMS для підприємства</h4>
-                        <div class="italic">Стек: Django, React, Bootstrap 4, Webpack</div>
-                        <div class="project-explanation">Перший мій проект, над яким я працював паралельно вивчаючи
-                            технології.
-                        </div>
+                        <div class="italic">Django, React, Bootstrap 4</div>
                         <div>Система внутрішнього електронного документообігу, яка з часом виросла у майже повноцінну
                             CMS з базами контрагентів, угод, наказів
                         </div>
@@ -95,12 +116,11 @@
                     </div>
                 </a>
                 <a href="projects/scheduler.html" class="project project-2">
-                    <img src="static/images/web-page.jpg" alt="Scheduler" loading="lazy">
+                    <img src="static/images/scheduler/scheduler_white.png" alt="Scheduler" loading="lazy">
                     <div class="description">
                         <h4 class="project-title">Календар для стоматологічного кабінету</h4>
-                        <div class="italic">Стек: Django, React, Bootstrap 4, Webpack</div>
+                        <div class="italic">Django, React, Bootstrap 4</div>
                         <div>На сайті ведеться база клієнтів, лікарів та календар прийомів.</div>
-                        <div>Можна змінювати теми.</div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
                 </a>
@@ -108,12 +128,9 @@
                     <img src="static/images/web-page.jpg" alt="StandUp" loading="lazy">
                     <div class="description">
                         <h4 class="project-title">StandUp tracker</h4>
-                        <div class="italic">Стек: Django, React, CSS, Webpack</div>
+                        <div class="italic">Django, React, CSS</div>
                         <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх
                             спешлам.
-                        </div>
-                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на
-                            тематичних форумах.
                         </div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
@@ -121,13 +138,10 @@
                 <a href="projects/standup.html" class="project project-3">
                     <img src="static/images/web-page.jpg" alt="StandUp" loading="lazy">
                     <div class="description">
-                        <h4 class="project-title">Сайт для попереднього роботодавця</h4>
-                        <div class="italic">Стек: HTML, CSS, Bootstrap 4, Pug, Gulp</div>
-                        <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх
-                            спешлам.
-                        </div>
-                        <div>В планах доробка функціоналу до MVP та вивід в інтернет з одночасним просуванням на
-                            тематичних форумах.
+                        <h4 class="project-title">Сайт для підприємства</h4>
+                        <div class="italic">HTML, Pug, CSS, Bootstrap 4</div>
+                        <div class="project-explanation">Сайт для заводу, який знайомить потенційних покупців з його
+                            історією та продукцією
                         </div>
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>

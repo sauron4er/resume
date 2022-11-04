@@ -89,6 +89,23 @@ section {
     transition: max-width 1s ease;
 }
 
+.about--stack {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.stack--item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: min(10vw, 50px);
+}
+
+.stack--item i {
+    font-size: min(2em, 7vw);
+}
+
 .about--text {
     text-align: justify;
     line-height: 1.3em;
@@ -103,6 +120,8 @@ section {
     display: flex;
     line-height: 1.3em;
     padding-top: max(6vw, 10vh);
+    background-color: black;
+    color: white;
 }
 
 .experience--text {
@@ -143,11 +162,12 @@ section {
 
 .project > img {
     width: 100%;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
 .project > .description {
     text-align: left;
-    padding-left: 10%;
+    padding: 0 5%;
     font-size: 1em;
 }
 
@@ -194,6 +214,8 @@ section {
     align-content: center;
     flex-wrap: wrap;
     gap: 1em;
+    background-color: black;
+    color: white;
 }
 
 #contacts h2 {
