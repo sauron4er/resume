@@ -227,6 +227,18 @@ section {
     text-align: center;
 }
 
+#contacts a {
+    color: white;
+}
+
+#contacts a i {
+    transform: translateY(5px);
+}
+
+#contacts a i.bxl-linkedin {
+    transform: translateY(2px);
+}
+
 .contact {
     display: flex;
     justify-content: center;
