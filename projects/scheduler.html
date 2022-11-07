@@ -18,45 +18,49 @@
 </nav>
 
 <main>
-    <h1 class="project-name">Календар для стоматологічної клініки <i class='bx bxl-github'></i></h1>
+    <h1 class="project-name">Календар для стоматологічної клініки
+        <a href="https://github.com/sauron4er/scheduler" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="http://mdent.pp.ua/" target="_blank"><i class='bx bx-link-external'></i></a>
+    </h1>
     <div class="project-content">
-        <img class="image-1" src="../static/images/scheduler/scheduler_white.png" alt="front page">
+        <img class="image-1" src="../static/images/scheduler/scheduler_white.png" alt="scheduler component">
         <div class="text-1">
-
             <p>Цей сайт я зробив для свого брата, використовуючи стек Django + React. Ведеться календар прийомів, бази
                 лікарів та клієнтів. Кожен прийом у календарі підсвічується іншим кольором в залежності від лікаря.
-                У кожного лікаря є свій обліковий запис, в якому він бачить лише свої прийому, може призначати нові,
+                У кожного лікаря є свій обліковий запис, в якому він бачить лише свої прийоми, може призначати нові,
                 додавати клієнтів тощо.</p>
-            <p>Календарний компонент написав повністю сам на основі html таблиць, не використовуючи сторонні бібліотеки.
+            <p>Календарний компонент написав сам на основі html таблиць, не використовуючи сторонні бібліотеки.
                 Також відмовився від використання сторонніх бібліотек-таблиць і написав свій компонент з пажинацією та
-                фільтрацією, який отримує з бекенду хедер та рядки. В планах додати drag-n-drop переміщення прийомів на інший
-                день/час.</p>
+                фільтрацією, який отримує з бекенду хедер та рядки. В планах додати drag-n-drop переміщення прийомів на
+                інший день/час.</p>
         </div>
         <div class="image-2">
-            <img class="image-mobile" src="../static/images/scheduler/scheduler_mobile_calendar.png" alt="decree creating">
-            <img class="image-mobile" src="../static/images/scheduler/scheduler_mobile_client%20(1).png" alt="hr page">
+            <img class="image-mobile" src="../static/images/scheduler/scheduler_mobile_calendar.png"
+                 alt="mobile scheduler view">
+            <img class="image-mobile" src="../static/images/scheduler/scheduler_mobile_client%201.png" alt="mobile visit view first picture">
+            <img class="image-mobile" src="../static/images/scheduler/scheduler_mobile_client%202.png" alt="mobile visit view second picture">
         </div>
 
         <div class="sidenote">
             <p>Найперший мій закінчений проект з програмування - така ж база клієнтів та календар візитів для цього ж
-                стоматологічного кабінету на Delphi+Firebird. БД була встановлена у Dropbox, тому програму порівняно
-                легко було синхронізувати між різними комп’ютерами.</p>
+                стоматологічного кабінету на Delphi+Firebird. Програма синхроніхзувалася між різними компютерами за
+                допомогою Dropbox.</p>
         </div>
 
-        <div class="image-4">
-            <img src="../static/images/scheduler/scheduler_black.png" alt="hr page">
-            <img src="../static/images/scheduler/scheduler_yellow.png" alt="hr page">
+        <div class="image-3">
+            <img src="../static/images/scheduler/scheduler_black.png" alt="black theme">
+            <img src="../static/images/scheduler/scheduler_yellow.png" alt="yellow theme">
         </div>
 
         <div class="text-2">
             <b>Уроки</b>
-            <p>Під час виконання цього замовлення, я перейшов з components на hooks. Спочатку такі зміни були не зовсім
+            <p>Під час виконання цього проекту я перейшов на використання React Hooks. Спочатку такі зміни були не зовсім
                 зрозумілими (чому, наприклад, треба всіювати код useEffect'ами замість використання зручно названих
                 componentDidMount, componentDidUpdate та колбеків в setState, які однозначно вказують, чому спрацювала
                 функція?), але з часом я навчився цінувати зручні сторони такого підходу.</p>
             <p>Навчився працювати з custom properties в CSS: зробив для сайту декілька тем: стандартні білу та чорну та,
                 по спеціальному замовленню лікарів, кремово-кофейну. Обрана тема зберігається в профілі лікаря. Також
-                більш серйозно заглибився у CSS, намагаючись зробити свій компонент Календар респонсивним.</p>
+                більш серйозно заглибився у CSS, намагаючись зробити компонент Календар респонсивним.</p>
         </div>
     </div>
 </main>

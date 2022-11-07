@@ -1,12 +1,4 @@
 @media screen and (min-width: 800px) {
-    .project-content {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        column-gap: 2em;
-        row-gap: 3em;
-        grid-auto-flow: dense;
-    }
-
     .image-1 {
         grid-column: span 3;
         grid-row: span 2;
@@ -17,17 +9,18 @@
         grid-row: span 3;
     }
 
-    .sidenote {
-        grid-column: 3;
-    }
-
     .image-2 {
-        grid-row: 3;
+        grid-row: 3 / span 2;
         grid-column: span 2;
     }
 
+    .sidenote {
+        grid-row: span 2;
+        grid-column: 3;
+    }
+
     .image-3 {
-        grid-column: 4 / span 2;
+        grid-column: span 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -39,10 +32,5 @@
 
     .text-2 {
         grid-column: span 3;
-    }
-
-    .hrefs {
-        grid-column: span 2;
-        grid-row: span 2;
     }
 }
