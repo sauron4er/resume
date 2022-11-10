@@ -19,18 +19,20 @@
     <a class="projects" href="#projects">Проекти</a>
     <a class="contacts" href="#contacts">Контакти</a>
 </nav>
-<!--    <div class="arrow arrow-up"></div>-->
-<!--    <div class="arrow arrow-down"></div>-->
 
 <main>
-    <!--            <i class='bx bx-chevron-up'></i>-->
-    <!--            <i class='bx bx-chevron-down'></i>-->
+    <!--    <i class='bx bx-chevron-up'></i>-->
+<!--        <i class='bx bx-chevron-down'></i>-->
+    <!--    <div class="arrow arrow-up"></div>-->
+    <!--    <a class="experience" href="#experience">-->
+    <!--        <div class="arrow arrow-down"></div>-->
+    <!--    </a>-->
 
     <section id="info">
+        <a class="arrow arrow-down" href="#experience"><img src="static/images/arrow.svg" alt="arrow down" ></a>
         <img class="hero" src="static/images/photo_500px.jpg" alt="Khramtsov">
         <div class="about">
             <h1 class="about--name">Станіслав Храмцов</h1>
-            <!--            <h3 class="about&#45;&#45;stack">HTML · CSS · JS · React · Django</h3>-->
             <div class="about--stack">
                 <div class="stack--item">
                     <i class='bx bxl-html5'></i>
@@ -55,7 +57,7 @@
             </div>
             <div class="about--text">
                 <p>Привіт!</p>
-                <p>Я з Закарпаття, живу близько 25 км від Ужгороду. Останні 3 роки займаюся Fullstack розробкою на
+                <p>Я з Закарпаття, живу близько 25 км від Ужгорода. Останні 3 роки займаюся Fullstack розробкою на
                     Django + React.
                 </p>
                 <p>Мій стек перерахований вгорі, але я завжди відкритий до вивчення чогось нового (наприклад, уже деякий
@@ -70,13 +72,14 @@
     </section>
 
     <section id="experience">
+        <a class="arrow arrow-up" href="#info"><img src="static/images/arrow-white.svg" alt="arrow down" ></a>
+        <a class="arrow arrow-down" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow down" ></a>
         <div class="experience--text">
             <h2>Про мене</h2>
             <p>В справжніх ІТ компаніях я, на жаль, ніколи не працював. Зі світом програмування познайомився 3 роки тому
                 і закінчив декілька проєктів. Але давайте спочатку.</p>
-            <p>Вчився в університеті я на банкіра, і це була помилка – досить швидко зрозумів, що це не моє. По
-                закінченні навчання працював трохи
-                адміністратором онлайн-клубу, потім влаштувався на роботу у місцеву газету верстальником. Прямо
+            <p>Вчився в університеті на банкіра, і це була помилка – досить швидко зрозумів, що це не моє. Після навчання працював трохи
+                адміністратором онлайн-клубу, потім пішов у місцеву газету верстальником. Прямо
                 під час роботи почав вивчати Adobe InDesign та Photoshop. Ще через якийсь час став фрилансером і почав
                 верстати перекладні інструкції для декількох великих бюро перекладів (тут я натякаю, що маю великий
                 досвід верстки по чужому дизайну). Але 90% замовлень надходили від замовників з росії, з якими 24
@@ -97,6 +100,8 @@
     </section>
 
     <section id="projects">
+        <a class="arrow arrow-up" href="#experience"><img src="static/images/arrow.svg" alt="arrow up" ></a>
+        <a class="arrow arrow-down" href="#contacts"><img src="static/images/arrow.svg" alt="arrow down" ></a>
         <div class="projects-container">
             <h2 class="test">Проекти</h2>
             <div class="projects-list">
@@ -148,6 +153,7 @@
         </div>
     </section>
     <section id="contacts">
+        <a class="arrow arrow-up last" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow up" ></a>
         <h2>Контакти</h2>
         <div class="contact"><a href="tel:+380955532977"><i class='bx bx-phone'></i> +380955532977</a></div>
         <div class="contact"><a href="https://telegram.me/R_K_I_N"><i class='bx bxl-telegram'></i> Stanislav
@@ -157,6 +163,20 @@
         <div class="contact"><a href="#"><i class='bx bxl-linkedin'></i> LinkedIn</a></div>
     </section>
 </main>
+
+<div class="mouse-tracker"></div>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', e => {
+      let x = e.clientX / innerWidth;
+      let y = e.clientY / innerHeight;
+
+      root.style.setProperty('--mouse-x', x);
+      root.style.setProperty('--mouse-y', y);
+    });
+</script>
 
 </body>
 </html>
