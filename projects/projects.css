@@ -53,7 +53,6 @@ main {
 
 .bxl-github {
     margin-left: .5em;
-
 }
 
 img {
@@ -83,7 +82,7 @@ img {
     position: absolute;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .project-content {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -92,7 +91,7 @@ img {
         grid-auto-flow: dense;
     }
 
-    .project-content > div {
-        margin-top: -5px;
+    .project-content > div:not(.sidenote) {
+        transform: translateY(-15px);
     }
 }

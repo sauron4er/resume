@@ -1,0 +1,59 @@
+.image-2, .image-4 {
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and (min-width: 1000px) {
+    .project-content > div:not(.sidenote) {
+        transform: translateY(-15px);
+    }
+
+    .image-1 {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    .text-1 {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    .image-2 {
+        grid-column: span 3;
+        align-self: start;
+    }
+
+    .image-3 {
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+
+    .sidenote {
+        align-self: start;
+        grid-column: span 2;
+    }
+
+    .text-2 {
+        grid-column: span 3;
+    }
+
+    .image-4 {
+        grid-column: span 3;
+        flex-direction: row;
+        /*justify-content: space-between;*/
+        gap: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sidenote {
+        align-self: start;
+        grid-column: span 1;
+    }
+
+    .image-4 {
+        grid-column: span 2;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
