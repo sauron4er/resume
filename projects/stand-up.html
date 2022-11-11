@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Храмцов&nbsp;- Scheduler</title>
+    <title>Храмцов&nbsp;- Stand-Up Tracker</title>
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="stand-up-grid.css">
@@ -19,8 +19,8 @@
 
 <main>
     <h1 class="project-name">Stand-up трекер
-        <a href="https://github.com/sauron4er/scheduler" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="http://mdent.pp.ua/" target="_blank"><i class='bx bx-link-external'></i></a>
+        <a href="https://github.com/sauron4er/stand_up_tracker" target="_blank"><i class='bx bxl-github'></i></a>
+<!--        <a href="http://mdent.pp.ua/" target="_blank"><i class='bx bx-link-external'></i></a>-->
     </h1>
     <div class="project-content">
         <img class="image-1" src="../static/images/stand-up/library.gif" alt="library page">
@@ -64,5 +64,19 @@
         </div>
     </div>
 </main>
+
+<div class="mouse-tracker"></div>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', e => {
+        let x = e.clientX / innerWidth;
+        let y = e.clientY / innerHeight;
+
+        root.style.setProperty('--mouse-x', x);
+        root.style.setProperty('--mouse-y', y);
+    });
+</script>
 </body>
 </html>

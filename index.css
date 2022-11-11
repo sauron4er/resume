@@ -274,26 +274,13 @@ section > * {
     height: 50px;
 }
 
-/*.arrow {*/
-/*    position: absolute;*/
-/*    left: 20px;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-left: 15px solid transparent;*/
-/*    border-right: 15px solid transparent;*/
-/*}*/
+.about, #experience > *, #contacts > * {
+    mix-blend-mode: difference;
+}
 
-/*.arrow.arrow-up {*/
-/*    top: calc(50% - 20px);*/
-/*    border-bottom: 15px solid var(--main-color);*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.arrow.arrow-down {*/
-/*    top: calc(50% + 10px);*/
-/*    border-top: 15px solid var(--main-color);*/
-/*    cursor: pointer;*/
-/*}*/
+.about--name {
+    mix-blend-mode: exclusion;
+}
 
 @media screen and (min-width: 900px) {
     nav .info {
@@ -312,16 +299,6 @@ section > * {
         animation: 4s ease nav-item-opacity;
     }
 }
-
-.mouse-tracker {
-    position: fixed;
-    height: 0;
-    width: 0;
-    top: calc(var(--mouse-y) * 100% - 50px);
-    left: calc(var(--mouse-x) * 101% - 50px);
-    box-shadow: 50px 50px 50px 50px var(--main-color);
-}
-
 
 @media screen and (min-width: 848px) {
     .hero {

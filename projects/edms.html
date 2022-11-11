@@ -16,9 +16,9 @@
 <nav class="project_nav">
     <a class="anchor_back" href="../index.html#projects"><i class='bx bx-chevron-left'></i></a>
 </nav>
-
 <main>
     <h1 class="project-name">CRM для підприємства <i class='bx bxl-github'></i></h1>
+
     <div class="project-content">
         <img class="image-1" src="../static/images/edms/front.png" alt="front page">
         <div class="text-1">
@@ -56,5 +56,19 @@
         <img class="image-4" src="../static/images/edms/hr.png" alt="hr page" loading="lazy">
     </div>
 </main>
+
+<div class="mouse-tracker"></div>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', e => {
+        let x = e.clientX / innerWidth;
+        let y = e.clientY / innerHeight;
+
+        root.style.setProperty('--mouse-x', x);
+        root.style.setProperty('--mouse-y', y);
+    });
+</script>
 </body>
 </html>

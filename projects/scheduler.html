@@ -64,5 +64,19 @@
         </div>
     </div>
 </main>
+
+<div class="mouse-tracker"></div>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', e => {
+        let x = e.clientX / innerWidth;
+        let y = e.clientY / innerHeight;
+
+        root.style.setProperty('--mouse-x', x);
+        root.style.setProperty('--mouse-y', y);
+    });
+</script>
 </body>
 </html>

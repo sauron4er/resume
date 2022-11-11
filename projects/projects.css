@@ -7,12 +7,6 @@
     }
 }
 
-@media screen and (min-width: 900px) {
-    nav {
-        animation: 1s ease nav-slide-in;
-    }
-}
-
 .project_nav {
     justify-content: flex-start;
     align-items: center;
@@ -80,6 +74,16 @@ img {
     height: 10px;
     border-top: 1px solid red;
     position: absolute;
+}
+
+.mouse-tracker {
+    z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        animation: 1s ease nav-slide-in;
+    }
 }
 
 @media screen and (min-width: 1000px) {

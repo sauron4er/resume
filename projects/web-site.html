@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Храмцов&nbsp;- Web-site</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="web-site-grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap"
+          rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<nav class="project_nav">
+    <a class="anchor_back" href="../index.html#projects"><i class='bx bx-chevron-left'></i></a>
+</nav>
+
+<main>
+    <h1 class="project-name">Сайт для роботодавця
+        <a href="https://github.com/sauron4er/lxk.com.ua" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://lxk.com.ua/" target="_blank"><i class='bx bx-link-external'></i></a>
+    </h1>
+    <div class="project-content">
+        <img class="image-1" src="../static/images/web-site/first%20page.png" alt="library page">
+        <div class="text-1">
+            Це простий статичний сайт з інформацією про завод та продукти, що він виробляє. Дизайнерів мій роботодавець
+            не залучав, тому вся робота виконана мною від початку і до кінця.
+            <p>Сайт написаний за допомогою Pug та Bootsrap 4. Позаяк у вимогах не було динамічності, React не
+                використовував зовсім, а Javascript - лише для роботи
+                контактної форми.</p>
+        </div>
+        <img class="image-2" src="../static/images/web-site/history.png"
+             alt="mobile library" loading="lazy">
+
+        <div class="sidenote sidenote-2">
+            <p>Під час роботи над іншим проєктом в мене теж було завдання додати багатомовність. Там використовувався
+                React, тому я підійшов до вирішення інакше: для кожної сторінки створив JSON-файл з перекладами написів,
+                а React підтягував з JSON необхідну для користувача мову.</p>
+        </div>
+
+        <img class="image-3" src="../static/images/web-site/charoal.png" alt="comedian edit page"
+             loading="lazy">
+
+        <div class="text-2">
+            <b>Уроки</b>
+            <p>Оскільки була вимога написати сайт на 5 мовах, я зовсім не
+                хотів створювати для кожної мови окрему теку з HTML файлами та вносити правки при необхідності у всі
+                файли. Це, як мінімум, контр-продуктивно. Тому, після невеликого дослідження, обрав варіант написання
+                сайту за допомогою pug. Для кожної сторінки створено один pug-файл, а з нього gulp компілює сторінки
+                для кожної мови. Тож, виконуючи цей проєкт, я навчився працювати з pug і поверхнево ознайомився з
+                gulp.</p>
+        </div>
+
+        <img class="image-4" src="../static/images/web-site/feedback.png" alt="library" loading="lazy">
+    </div>
+</main>
+
+<div class="mouse-tracker"></div>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', e => {
+        let x = e.clientX / innerWidth;
+        let y = e.clientY / innerHeight;
+
+        root.style.setProperty('--mouse-x', x);
+        root.style.setProperty('--mouse-y', y);
+    });
+</script>
+</body>
+</html>

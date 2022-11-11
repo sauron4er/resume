@@ -22,14 +22,15 @@
 
 <main>
     <!--    <i class='bx bx-chevron-up'></i>-->
-<!--        <i class='bx bx-chevron-down'></i>-->
+    <!--        <i class='bx bx-chevron-down'></i>-->
     <!--    <div class="arrow arrow-up"></div>-->
     <!--    <a class="experience" href="#experience">-->
     <!--        <div class="arrow arrow-down"></div>-->
     <!--    </a>-->
 
     <section id="info">
-        <a class="arrow arrow-down" href="#experience"><img src="static/images/arrow.svg" alt="arrow down" ></a>
+        <a class="arrow arrow-down" href="#experience"><img src="static/images/arrow.svg" alt="arrow down"
+                                                            aria-hidden="true"></a>
         <img class="hero" src="static/images/photo_500px.jpg" alt="Khramtsov">
         <div class="about">
             <h1 class="about--name">Станіслав Храмцов</h1>
@@ -72,13 +73,16 @@
     </section>
 
     <section id="experience">
-        <a class="arrow arrow-up" href="#info"><img src="static/images/arrow-white.svg" alt="arrow down" ></a>
-        <a class="arrow arrow-down" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow down" ></a>
+        <a class="arrow arrow-up" href="#info"><img src="static/images/arrow-white.svg" alt="arrow up"
+                                                    aria-hidden="true"></a>
+        <a class="arrow arrow-down" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow down"
+                                                          aria-hidden="true"></a>
         <div class="experience--text">
             <h2>Про мене</h2>
             <p>В справжніх ІТ компаніях я, на жаль, ніколи не працював. Зі світом програмування познайомився 3 роки тому
                 і закінчив декілька проєктів. Але давайте спочатку.</p>
-            <p>Вчився в університеті на банкіра, і це була помилка – досить швидко зрозумів, що це не моє. Після навчання працював трохи
+            <p>Вчився в університеті на банкіра, і це була помилка – досить швидко зрозумів, що це не моє. Після
+                навчання працював трохи
                 адміністратором онлайн-клубу, потім пішов у місцеву газету верстальником. Прямо
                 під час роботи почав вивчати Adobe InDesign та Photoshop. Ще через якийсь час став фрилансером і почав
                 верстати перекладні інструкції для декількох великих бюро перекладів (тут я натякаю, що маю великий
@@ -100,8 +104,10 @@
     </section>
 
     <section id="projects">
-        <a class="arrow arrow-up" href="#experience"><img src="static/images/arrow.svg" alt="arrow up" ></a>
-        <a class="arrow arrow-down" href="#contacts"><img src="static/images/arrow.svg" alt="arrow down" ></a>
+        <a class="arrow arrow-up" href="#experience"><img src="static/images/arrow.svg" alt="arrow up"
+                                                          aria-hidden="true"></a>
+        <a class="arrow arrow-down" href="#contacts"><img src="static/images/arrow.svg" alt="arrow down"
+                                                          aria-hidden="true"></a>
         <div class="projects-container">
             <h2 class="test">Проекти</h2>
             <div class="projects-list">
@@ -138,8 +144,8 @@
                     </div>
                     <div class="more"><i class='bx bx-plus'></i></div>
                 </a>
-                <a href="projects/standup.html" class="project project-3">
-                    <img src="static/images/web-page.jpg" alt="StandUp" loading="lazy">
+                <a href="projects/web-site.html" class="project project-3">
+                    <img src="static/images/web-site/first%20page.png" alt="StandUp" loading="lazy">
                     <div class="description">
                         <h4 class="project-title">Сайт для підприємства</h4>
                         <div class="italic">HTML, Pug, CSS, Bootstrap 4</div>
@@ -153,7 +159,8 @@
         </div>
     </section>
     <section id="contacts">
-        <a class="arrow arrow-up last" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow up" ></a>
+        <a class="arrow arrow-up last" href="#projects"><img src="static/images/arrow-white.svg" alt="arrow up"
+                                                             aria-hidden="true"></a>
         <h2>Контакти</h2>
         <div class="contact"><a href="tel:+380955532977"><i class='bx bx-phone'></i> +380955532977</a></div>
         <div class="contact"><a href="https://telegram.me/R_K_I_N"><i class='bx bxl-telegram'></i> Stanislav
@@ -170,11 +177,11 @@
     const root = document.documentElement;
 
     document.addEventListener('mousemove', e => {
-      let x = e.clientX / innerWidth;
-      let y = e.clientY / innerHeight;
+        let x = e.clientX / innerWidth;
+        let y = e.clientY / innerHeight;
 
-      root.style.setProperty('--mouse-x', x);
-      root.style.setProperty('--mouse-y', y);
+        root.style.setProperty('--mouse-x', x);
+        root.style.setProperty('--mouse-y', y);
     });
 </script>
 
