@@ -76,7 +76,9 @@ section > * {
     align-items: center;
     align-content: center;
     padding-top: max(6vw, 10vh);
+    /*background-color: var(--body-color);*/
     z-index: 1;
+    /*border-radius: 0 0 15% 15%;*/
 }
 
 .hero {
@@ -126,6 +128,7 @@ section > * {
     padding-top: max(6vw, 10vh);
     background-color: black;
     color: white;
+    border-radius: 0 0 15% 15%;
 }
 
 .experience--text {
@@ -223,8 +226,14 @@ section > * {
     color: white;
 }
 
-#contacts h2 {
-    width: 100%
+#contacts > h2 {
+    width: 100%;
+}
+
+#contacts > h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 #contacts div {
@@ -276,10 +285,6 @@ section > * {
 
 .about, #experience > *, #contacts > * {
     mix-blend-mode: difference;
-}
-
-.about--name {
-    mix-blend-mode: exclusion;
 }
 
 @media screen and (min-width: 900px) {

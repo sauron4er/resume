@@ -6,6 +6,7 @@
 
 :root {
    --main-color: #3a76aa;
+   --body-color: #F5F5F5;
 }
 
 @keyframes nav-slide-in {
@@ -27,7 +28,8 @@ html {
 }
 
 body {
-    background-color: #F5F5F5;
+    /*background-color: red;*/
+    background-color: var(--body-color);
     min-width: fit-content;
     margin: 0;
 }
