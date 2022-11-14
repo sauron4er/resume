@@ -3,6 +3,10 @@
     gap: 1em;
 }
 
+.image-mobile {
+    max-width: calc(50% - .5em);
+}
+
 @media screen and (min-width: 1000px) {
     .project-content > div:not(.sidenote) {
         transform: translateY(-15px);
@@ -20,7 +24,7 @@
 
     .image-2 {
         grid-column: span 3;
-        align-self: start;
+        /*align-self: start;*/
     }
 
     .image-3 {

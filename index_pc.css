@@ -1,0 +1,112 @@
+@keyframes nav-item-opacity {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes content-slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hero-opacity {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes about-transparent-to-black {
+    0% {
+        color: transparent;
+    }
+    33% {
+        color: transparent;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about--stack {
+        gap: 1em;
+    }
+
+    .project > .more {
+        width: 0;
+    }
+
+    .project > .more > .bx-plus {
+        color: transparent;
+    }
+
+    .project:hover > .more {
+        width: 45px;
+        transition: width .5s ease;
+    }
+
+    .project:hover > .more > .bx-plus {
+        color: white;
+        transition: color 1s .5s ease;
+    }
+}
+
+@media screen and (min-width: 846px) and (max-width: 1400px) {
+    .project-4 {
+        grid-column: 2;
+    }
+}
+
+@media screen and (min-width: 848px) {
+    .hero {
+        will-change: animation;
+        animation: .75s ease-out 0s content-slide-in, 1s ease-out hero-opacity;
+    }
+
+    .about, .about--text--anchor {
+        animation: 2.25s ease-out about-transparent-to-black;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav .info {
+        animation: 2.2s ease nav-item-opacity;
+    }
+
+    nav .experience {
+        animation: 2.5s ease nav-item-opacity;
+    }
+
+    nav .projects {
+        animation: 2.8s ease nav-item-opacity;
+    }
+
+    nav .contacts {
+        animation: 3.1s ease nav-item-opacity;
+    }
+}
+
+@media screen and (min-width: 1145px) {
+    .project {
+        border: none;
+    }
+}

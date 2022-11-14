@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Храмцов&nbsp;- CRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Храмцов - CRM</title>
     <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../global_pc.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="edms-grid.css">
+    <link rel="stylesheet" href="projects_pc.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="edms-grid.css" media="screen and (min-width: 1000px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap"
@@ -17,7 +20,10 @@
     <a class="anchor_back" href="../index.html#projects"><i class='bx bx-chevron-left'></i></a>
 </nav>
 <main>
-    <h1 class="project-name">CRM для підприємства <i class='bx bxl-github'></i></h1>
+    <h1 class="project-name">CRM для підприємства</h1>
+    <h2 class="project-links">
+        <a href="https://github.com/sauron4er/plxk" target="_blank"><i class='bx bxl-github'></i></a>
+    </h2>
 
     <div class="project-content">
         <img class="image-1" src="../static/images/edms/front.png" alt="front page">
@@ -60,15 +66,15 @@
 <div class="mouse-tracker"></div>
 
 <script>
-    const root = document.documentElement;
+  const root = document.documentElement;
 
-    document.addEventListener('mousemove', e => {
-        let x = e.clientX / innerWidth;
-        let y = e.clientY / innerHeight;
+  document.addEventListener('mousemove', e => {
+    let x = e.clientX / innerWidth;
+    let y = e.clientY / innerHeight;
 
-        root.style.setProperty('--mouse-x', x);
-        root.style.setProperty('--mouse-y', y);
-    });
+    root.style.setProperty('--mouse-x', x);
+    root.style.setProperty('--mouse-y', y);
+  });
 </script>
 </body>
 </html>

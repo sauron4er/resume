@@ -1,64 +1,6 @@
-:root {
-    --mouse-x: -1px;
-    --mouse-y: -1px;
-}
-
-@keyframes nav-item-opacity {
-    0% {
-        opacity: 0;
-    }
-    66% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes content-slide-in {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes hero-opacity {
-    0% {
-        opacity: 0;
-    }
-    15% {
-        opacity: 0;
-    }
-    25% {
-        opacity: .2;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes about-transparent-to-black {
-    0% {
-        color: transparent;
-    }
-    33% {
-        color: transparent;
-    }
-    100% {
-        color: black;
-    }
-}
-
-main {
-    scroll-snap-type: x mandatory;
-}
-
 section {
     padding: 1em;
     min-height: 100vh;
-    scroll-snap-align: center;
     position: relative;
 }
 
@@ -67,7 +9,6 @@ section > * {
 }
 
 /* About */
-
 #info {
     display: flex;
     gap: 3vw;
@@ -76,9 +17,7 @@ section > * {
     align-items: center;
     align-content: center;
     padding-top: max(6vw, 10vh);
-    /*background-color: var(--body-color);*/
     z-index: 1;
-    /*border-radius: 0 0 15% 15%;*/
 }
 
 .hero {
@@ -97,7 +36,7 @@ section > * {
 
 .about--stack {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     margin-bottom: 2em;
 }
 
@@ -113,7 +52,6 @@ section > * {
 }
 
 .about--text {
-    text-align: justify;
     line-height: 1.3em;
 }
 
@@ -133,7 +71,6 @@ section > * {
 .experience--text {
     margin: auto;
     max-width: min(800px, 80%);
-    text-align: justify;
     line-height: 1.5em;
 }
 
@@ -148,6 +85,7 @@ section > * {
     align-items: center;
     justify-content: center;
     padding-top: max(6vw, 10vh);
+    padding-inline: 3em;
 }
 
 .projects-list {
@@ -189,27 +127,17 @@ section > * {
 
 .project > .more {
     position: absolute;
-    top: 30%;
-    right: 0;
+    top: 5px;
+    right: 5px;
     display: flex;
     background-color: var(--main-color);
-    width: 0;
+    width: 45px;
     height: 45px;
 }
 
-.project:hover > .more {
-    width: 45px;
-    transition: width .5s ease;
-}
-
 .more > .bx-plus {
-    color: transparent;
-    margin: auto;
-}
-
-.project:hover > .more > .bx-plus {
     color: white;
-    transition: color 1s .5s ease;
+    margin: auto;
 }
 
 /* Contacts*/
@@ -285,43 +213,6 @@ section > * {
 .about, #experience > *, #contacts > * {
     mix-blend-mode: difference;
 }
-
-@media screen and (min-width: 900px) {
-    nav .info {
-        animation: 2.5s ease nav-item-opacity;
-    }
-
-    nav .experience {
-        animation: 3s ease nav-item-opacity;
-    }
-
-    nav .projects {
-        animation: 3.5s ease nav-item-opacity;
-    }
-
-    nav .contacts {
-        animation: 4s ease nav-item-opacity;
-    }
-}
-
-@media screen and (min-width: 848px) {
-    .hero {
-        will-change: animation;
-        animation: .75s ease-out 0s content-slide-in, 1s ease-out hero-opacity;
-    }
-
-    .about, .about--text--anchor {
-        animation: 2.25s ease-out about-transparent-to-black;
-    }
-}
-
-
-@media screen and (min-width: 1145px) {
-    .project {
-        border: none;
-    }
-}
-
 
 @media screen and (min-width: 370px) and (max-width: 1063px) {
     .hero {

@@ -1,10 +1,5 @@
-@keyframes nav-slide-in {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+body {
+    text-align: left;
 }
 
 .project_nav {
@@ -21,6 +16,7 @@
 main {
     margin: 8vh 5vw;
     padding-top: 1em;
+    line-height: 2em;
 }
 
 .project-content {
@@ -31,22 +27,17 @@ main {
 }
 
 .project-content > div:not(.sidenote) {
-    text-align: justify;
     margin-top: 10px;
 }
 
 .project-name {
     text-align: center;
-    margin-bottom: 1.5em;
     font-size: 1.5em;
+    margin-bottom: 0;
 }
 
-.project-name a > * {
-    transform: translateY(2px);
-}
-
-.bxl-github {
-    margin-left: .5em;
+.project-links {
+    margin-bottom: 1em;
 }
 
 img {
@@ -59,6 +50,7 @@ img {
     position: relative;
     padding: 1em 0;
     margin: 1em 0;
+    text-align: left;
 }
 
 .sidenote::before {
@@ -74,28 +66,4 @@ img {
     height: 10px;
     border-top: 1px solid red;
     position: absolute;
-}
-
-.mouse-tracker {
-    z-index: -1;
-}
-
-@media screen and (min-width: 900px) {
-    nav {
-        animation: 1s ease nav-slide-in;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .project-content {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        column-gap: 2em;
-        row-gap: 3em;
-        grid-auto-flow: dense;
-    }
-
-    .project-content > div:not(.sidenote) {
-        transform: translateY(-15px);
-    }
 }

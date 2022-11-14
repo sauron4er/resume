@@ -70,11 +70,3 @@
         grid-row: 3 / span 2;
     }
 }
-
-/*@media screen and (min-width: 1330px) {*/
-/*    .sidenote {*/
-/*        grid-column: 5 / span 2;*/
-/*        grid-row: 4;*/
-/*        align-self: start;*/
-/*    }*/
-/*}*/

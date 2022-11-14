@@ -5,20 +5,10 @@
 }
 
 :root {
-   --main-color: #3a76aa;
-   --body-color: #F5F5F5;
-}
-
-@keyframes nav-slide-in {
-    0% {
-        transform: translateX(100%);
-    }
-    33% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+    --main-color: #3a76aa;
+    --body-color: #F5F5F5;
+    --mouse-x: -1px;
+    --mouse-y: -1px;
 }
 
 html {
@@ -28,10 +18,10 @@ html {
 }
 
 body {
-    /*background-color: red;*/
     background-color: var(--body-color);
     min-width: fit-content;
     margin: 0;
+    text-align: left;
 }
 
 h1 {
@@ -73,27 +63,4 @@ nav {
 
 nav a {
     color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-.mouse-tracker {
-    position: fixed;
-
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: white;
-
-    top: calc(var(--mouse-y) * 100% - 50px);
-    left: calc(var(--mouse-x) * 101% - 50px);
-}
-
-@media screen and (min-width: 900px) {
-    nav {
-        animation: 1.5s ease nav-slide-in;
-    }
 }
