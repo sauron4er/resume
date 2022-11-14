@@ -46,28 +46,30 @@
     }
 }
 
-@media screen and (min-width: 600px) {
-    .about--stack {
-        gap: 1em;
-    }
+.arrow:hover {
+    cursor: pointer;
+}
 
-    .project > .more {
-        width: 0;
-    }
+.about--stack {
+    gap: 1em;
+}
 
-    .project > .more > .bx-plus {
-        color: transparent;
-    }
+.project > .more {
+    width: 0;
+}
 
-    .project:hover > .more {
-        width: 45px;
-        transition: width .5s ease;
-    }
+.project > .more > .bx-plus {
+    color: transparent;
+}
 
-    .project:hover > .more > .bx-plus {
-        color: white;
-        transition: color 1s .5s ease;
-    }
+.project:hover > .more {
+    width: 45px;
+    transition: width .5s ease;
+}
+
+.project:hover > .more > .bx-plus {
+    color: white;
+    transition: color 1s .5s ease;
 }
 
 @media screen and (min-width: 846px) and (max-width: 1400px) {

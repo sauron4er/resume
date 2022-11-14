@@ -5,8 +5,8 @@
 }
 
 :root {
-    --main-color: #3a76aa;
-    --body-color: #F5F5F5;
+    --main-color: rgba(58, 118, 170, 1);
+    --body-color: rgba(58, 118, 170, 0.05);
     --mouse-x: -1px;
     --mouse-y: -1px;
 }

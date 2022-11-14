@@ -108,6 +108,7 @@ section > * {
 .project > img {
     width: 100%;
     box-shadow: 3px 3px 5px dimgrey;
+    cursor: pointer;
 }
 
 .project > .description {
@@ -194,7 +195,6 @@ section > * {
 .arrow {
     position: absolute;
     left: 20px;
-    cursor: pointer;
 }
 
 .arrow-up {
@@ -208,6 +208,7 @@ section > * {
 
 .arrow img {
     height: 50px;
+    margin: 10px;
 }
 
 .about, #experience > *, #contacts > * {
