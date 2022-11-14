@@ -128,14 +128,13 @@ section > * {
     padding-top: max(6vw, 10vh);
     background-color: black;
     color: white;
-    border-radius: 0 0 15% 15%;
 }
 
 .experience--text {
     margin: auto;
     max-width: min(800px, 80%);
     text-align: justify;
-    line-height: 1.8em;
+    line-height: 1.5em;
 }
 
 .experience--text--italic {
