@@ -2,19 +2,19 @@
     z-index: -1;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     body {
         text-align: justify;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
     nav {
         animation: 1s ease nav-slide-in;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
     .project-content {
         display: grid;
         grid-template-columns: repeat(6, 1fr);

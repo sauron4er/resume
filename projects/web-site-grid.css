@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
     .project-content > div:not(.sidenote) {
         transform: translateY(-15px);
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media (min-width: 1260px) {
     .text-1 {
         grid-column: 5 / span 2;
         grid-row: 1 / span 2;

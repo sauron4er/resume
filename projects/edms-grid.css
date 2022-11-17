@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
     .image-1 {
         grid-column: span 3;
     }
@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
     .image-1 {
         grid-column: span 3;
     }
@@ -73,7 +73,7 @@
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media (min-width: 1500px) {
     .image-1 {
         grid-column: span 3;
     }

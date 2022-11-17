@@ -72,13 +72,13 @@
     transition: color 1s .5s ease;
 }
 
-@media screen and (min-width: 846px) and (max-width: 1400px) {
+@media (min-width: 846px) and (max-width: 1400px) {
     .project-4 {
         grid-column: 2;
     }
 }
 
-@media screen and (min-width: 848px) {
+@media (min-width: 848px) {
     .hero {
         will-change: animation;
         animation: .75s ease-out 0s content-slide-in, 1s ease-out hero-opacity;
@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
     nav .info {
         animation: 2.2s ease nav-item-opacity;
     }
@@ -107,7 +107,7 @@
     }
 }
 
-@media screen and (min-width: 1145px) {
+@media (min-width: 1145px) {
     .project {
         border: none;
     }
