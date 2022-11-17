@@ -16,7 +16,6 @@ section > * {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-top: max(6vw, 10vh);
     z-index: 1;
 }
 
@@ -63,7 +62,6 @@ section > * {
 #experience {
     display: flex;
     line-height: 1.3em;
-    padding-top: max(6vw, 10vh);
     background-color: black;
     color: white;
 }
@@ -84,7 +82,6 @@ section > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: max(6vw, 10vh);
     padding-inline: 3em;
 }
 

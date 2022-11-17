@@ -48,22 +48,7 @@ img {
 .sidenote {
     font-style: italic;
     position: relative;
-    padding: 1em 0;
-    margin: 1em 0;
     text-align: left;
-}
-
-.sidenote::before {
-    content: '';
-    width: 100%;
-    border-bottom: 1px solid red;
-    position: absolute;
-}
-
-.sidenote::after {
-    content: '';
-    width: 100%;
-    height: 10px;
     border-top: 1px solid red;
-    position: absolute;
+    border-bottom: 1px solid red;
 }

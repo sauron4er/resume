@@ -15,6 +15,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     scroll-behavior: smooth;
+    scroll-margin-top: max(6vw, 10vh);
 }
 
 body {
