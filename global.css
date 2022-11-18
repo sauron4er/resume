@@ -39,7 +39,7 @@ h2 {
     text-align: center;
 }
 
-h4 {
+h4, strong {
     font-family: 'Roboto Slab', serif;
     margin: 0;
 }

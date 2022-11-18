@@ -25,31 +25,31 @@
 <main>
     <section id="info">
         <div class="grey-background"></div>
-        <a class="arrow arrow-down" href="#experience">
-            <img class="arrow--img" src="static/images/arrow.svg" alt="arrow down" aria-hidden="true"></a>
+        <a class="arrow arrow-down" href="#experience" aria-hidden="true" tabindex='-1'>
+            <img class="arrow--img" src="static/images/arrow.svg" alt="arrow down"></a>
         <img class="hero" src="static/images/photo_500px.jpg" alt="Khramtsov">
         <div class="about">
             <h1 class="about--name">Станіслав Храмцов</h1>
             <div class="about--stack">
                 <div class="stack--item">
                     <i class='bx bxl-html5'></i>
-                    <h4>HTML</h4>
+                    <strong>HTML</strong>
                 </div>
                 <div class="stack--item">
                     <i class='bx bxl-css3'></i>
-                    <h4>CSS</h4>
+                    <strong>CSS</strong>
                 </div>
                 <div class="stack--item">
                     <i class='bx bxl-javascript'></i>
-                    <h4>JS</h4>
+                    <strong>JS</strong>
                 </div>
                 <div class="stack--item">
                     <i class='bx bxl-react'></i>
-                    <h4>React</h4>
+                    <strong>React</strong>
                 </div>
                 <div class="stack--item">
                     <i class='bx bxl-django'></i>
-                    <h4>Django</h4>
+                    <strong>Django</strong>
                 </div>
             </div>
             <div class="about--text">
@@ -69,10 +69,8 @@
     </section>
 
     <section id="experience">
-        <a class="arrow arrow-up" href="#info"><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow up"
-                                                    aria-hidden="true"></a>
-        <a class="arrow arrow-down" href="#projects"><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow down"
-                                                          aria-hidden="true"></a>
+        <a class="arrow arrow-up" href="#info" aria-hidden="true" tabindex='-1'><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow up"></a>
+        <a class="arrow arrow-down" href="#projects" aria-hidden="true" tabindex='-1'><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow down"></a>
         <div class="experience--text">
             <h2>Про мене</h2>
             <p>В справжніх ІТ компаніях я, на жаль, ніколи не працював. Зі світом програмування познайомився 3 роки тому
@@ -91,26 +89,25 @@
                 повноцінну CRM.
             </p>
             <p>Мені 36 років, але не лякайтеся, я ще не настільки старий, щоб розлюбити вчитися. Цього року дуже
-                зацікавився ванільним CSS, його анімаціями, роботою з адаптивністю. Коли зрозумів,
-                що досяг стелі в розвитку на заводі, почав цікавитися роботою в ІТ і звернув увагу на agile,
+                зацікавився ванільним CSS3, його анімаціями, роботою з адаптивністю. Коли зрозумів,
+                що досяг стелі в розвитку на заводі, почав цікавитися роботою в ІТ і звернув увагу на Agile,
                 принципи та методології якого зараз вивчаю. Також хочу ближче познайомитися з Next.JS.
             </p>
-            <p class="experience--text--italic">З задоволенням почну свою кар’єру в ІТ на позиції Junior Frontend/Fullstack Developer.</p>
+            <p class="experience--text--italic">З задоволенням почну свою кар’єру в ІТ на позиції Junior Frontend Developer,
+                а з часом надіюсь вирости до Fullstack JS Developer.</p>
         </div>
     </section>
 
     <section id="projects">
-        <a class="arrow arrow-up" href="#experience"><img class="arrow--img" src="static/images/arrow.svg" alt="arrow up"
-                                                          aria-hidden="true"></a>
-        <a class="arrow arrow-down" href="#contacts"><img class="arrow--img" src="static/images/arrow.svg" alt="arrow down"
-                                                          aria-hidden="true"></a>
+        <a class="arrow arrow-up" href="#experience" aria-hidden="true" tabindex='-1'><img class="arrow--img" src="static/images/arrow.svg" alt="arrow up"></a>
+        <a class="arrow arrow-down" href="#contacts" aria-hidden="true" tabindex='-1'><img class="arrow--img" src="static/images/arrow.svg" alt="arrow down"></a>
         <div class="projects-container">
             <h2 class="test">Проекти</h2>
             <div class="projects-list">
                 <a href="projects/edms.html" class="project project-1">
                     <img src="static/images/edms/front.png" alt="EDMS Project" loading="lazy">
                     <div class="description">
-                        <h4 class="project-title">CMS для підприємства</h4>
+                        <h3 class="project-title">CMS для підприємства</h3>
                         <div class="italic">Django, React, Bootstrap 4</div>
                         <div>Система внутрішнього електронного документообігу, яка з часом виросла у майже повноцінну
                             CMS з базами контрагентів, угод, наказів
@@ -123,7 +120,7 @@
                 <a href="projects/scheduler.html" class="project project-2">
                     <img src="static/images/scheduler/scheduler_white.png" alt="Scheduler" loading="lazy">
                     <div class="description">
-                        <h4 class="project-title">Календар для стоматологічного кабінету</h4>
+                        <h3 class="project-title">Календар для стоматологічного кабінету</h3>
                         <div class="italic">Django, React, Bootstrap 4</div>
                         <div>На сайті ведеться база клієнтів, лікарів та календар візитів.</div>
                     </div>
@@ -132,7 +129,7 @@
                 <a href="projects/stand-up.html" class="project project-3">
                     <img src="static/images/stand-up/library%201.png" alt="StandUp" loading="lazy">
                     <div class="description">
-                        <h4 class="project-title">StandUp tracker</h4>
+                        <h3 class="project-title">StandUp tracker</h3>
                         <div class="italic">Django, React, CSS</div>
                         <div class="project-explanation">Пет-проект, який дозволяє ставити оцінки комікам та їх
                             спешлам.
@@ -143,7 +140,7 @@
                 <a href="projects/web-site.html" class="project project-4">
                     <img src="static/images/web-site/first%20page.png" alt="StandUp" loading="lazy">
                     <div class="description">
-                        <h4 class="project-title">Сайт для підприємства</h4>
+                        <h3 class="project-title">Сайт для підприємства</h3>
                         <div class="italic">HTML, Pug, CSS, Bootstrap 4</div>
                         <div class="project-explanation">Сайт для заводу, який знайомить потенційних покупців з його
                             історією та продукцією
@@ -155,10 +152,9 @@
         </div>
     </section>
     <section id="contacts">
-        <a class="arrow arrow-up last" href="#projects"><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow up"
-                                                             aria-hidden="true"></a>
+        <a class="arrow arrow-up last" href="#projects" aria-hidden="true" tabindex='-1'><img class="arrow--img" src="static/images/arrow-white.svg" alt="arrow up"></a>
         <h2>Контакти</h2>
-        <h4>Клацніть на контакт, щоб зв’язатися :)</h4>
+        <h3>Клацніть на контакт, щоб зв’язатися :)</h3>
         <div class="contact"><a href="tel:+380955532977"><i class='bx bx-phone'></i> +380955532977</a></div>
         <div class="contact"><a href="https://telegram.me/R_K_I_N"><i class='bx bxl-telegram'></i> Stanislav
             Khramtsov</a></div>
