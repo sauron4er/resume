@@ -6,7 +6,7 @@
 
 :root {
     --main-color: rgba(58, 118, 170, 1);
-    --body-color: rgba(58, 118, 170, 0.05);
+    --body-color: rgba(58, 118, 170, 0.2);
     --mouse-x: -1px;
     --mouse-y: -1px;
 }
