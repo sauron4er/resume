@@ -53,3 +53,17 @@ nav a:hover {
         cursor: initial;
     }
 }
+
+@media (forced-colors: active) {
+    body {
+        cursor: initial;
+    }
+
+    nav {
+        border-bottom: 1px solid;
+    }
+
+    .project {
+        outline: 1px solid;
+    }
+}
